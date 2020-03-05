@@ -34,7 +34,7 @@ body{
 
 }
 .horizontal-list li a:hover{
-	color: #571f05;
+	color: white;
 	border-bottom: 3px solid white;
 	border-radius: 5px;
 	box-shadow:0px 0px 3px 3px white;
