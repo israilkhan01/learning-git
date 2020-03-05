@@ -1,0 +1,146 @@
+body{
+	width: 90%;
+	/*height: 100vh;*/
+	margin: auto;
+    background-image: url('static/host.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#HOME a{
+         font-size: 1.5rem;
+         color: white;
+
+}
+.back{
+	width: 50%;
+	/*background-color: lightgrey;*/
+	margin: auto;
+	margin-top: 5%;
+	border-radius: 2%;
+	border: 2px solid white;
+
+}
+.loginbox{
+	width: 95%;
+	/*height: 10vh;*/
+	/*background: linear-gradient(#0b4043,#4a95b9);*/
+	margin: auto;
+	border-bottom: 2px solid white;
+
+}
+.loginbox h1{
+	text-align: center;
+    color: white;
+    font-style: normal;
+    font-size: 200%;
+}
+/*form {
+  border: 3px solid #f1f1f1;
+}*/
+
+/* Full-width inputs */
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #063152;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #063152;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px min-width) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+  .back{
+	width: 95%;
+	/*background-color: lightgrey;*/
+	margin: auto;
+	margin-top: 5%;
+	border-radius: 2%;
+	border: 2px solid white;
+    }
+}
+@media screen and (max-width:900px ){
+	.back{
+	width: 75%;
+	/*background-color: lightgrey;*/
+	margin: auto;
+	margin-top: 5%;
+	border-radius: 2%;
+	border: 2px solid white;
+    }
+}
+@media screen and (max-width:765px ){
+	.back{
+	width: 85%;
+	/*background-color: lightgrey;*/
+	margin: auto;
+	margin-top: 5%;
+	border-radius: 2%;
+	border: 2px solid white;
+    }
+}
+@media screen and (max-width:575px min-width: 300px){
+	.back{
+	width: 95%;
+	/*background-color: lightgrey;*/
+	margin: auto;
+	margin-top: 5%;
+	border-radius: 2%;
+	border: 2px solid white;
+    }
+}

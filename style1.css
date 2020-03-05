@@ -1,0 +1,22 @@
+#body{
+	width: 100%;
+	background-color: white;
+	/*display: inline-block;*/
+}
+div{
+	width: 30%;
+    height: 300px;
+    display: inline-block;
+    margin:1%;
+}
+#red{
+	background-color: red;
+
+}
+#yellow{
+	background-color: yellow;
+
+}
+#green{
+	background-color: green;
+}

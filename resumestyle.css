@@ -1,0 +1,364 @@
+body{
+	min-height: 100vh;
+	background-image: url('static/edu2.jpg');
+	background-repeat: no-repeat;
+	background-color: black;
+    /*opacity: 0.9;*/
+	background-size:cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	z-index: -1;
+}
+
+.Menu img{
+	height: 0px;
+	width: 0px;
+}
+.horizontal-list{
+	    list-style: none;
+		padding: 0px;
+		text-align: center;
+}
+.horizontal-list li{
+	align-items: center;
+	display: inline-block;
+	margin: 10px 10px 10px 8px;
+	transition: 1s;
+}
+.horizontal-list li a{
+	color: white;
+    color-profile: auto;
+    text-decoration:none;
+    font-size: 26px;
+    transition: color 1s,border-bottom 0.4s;
+
+}
+.horizontal-list li a:hover{
+	color: #571f05;
+	border-bottom: 3px solid white;
+	border-radius: 5px;
+	box-shadow:0px 0px 3px 3px white;
+
+}
+@media screen and (max-width:575px min-width: 300px){
+	.Menu{
+		color: white;
+		border: none;
+	}
+	.Menu img {
+		height: 45px;
+		width: 50px;
+
+	} 
+	.menu-button-drop {
+		position: static;
+		display: block;
+
+	}
+	.menu-button{
+		list-style: none;
+		padding: 0px;
+		text-align: center;
+		display: none;
+		position: absolute;
+		background-color: white;
+		min-width: 160px;
+		margin-top: 0px;
+		box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+	.menu-button a{
+		color: black;
+		text-decoration: none;
+		display: block;
+       }
+
+
+	.menu-button a:hover{
+		background-color: white;
+	}
+	.menu-button-drop:hover .menu-button{
+		display: inline-block;
+	}
+	.menu-button-drop:hover .Menu {
+		background-color:white;
+	 }
+}
+
+#body_header{
+	min-height: 80vh;
+}
+#body_header h1{
+	text-align: center;
+	color: white;
+	font-size: 5rem;
+	font-style: italic;
+	margin-top: 100px;
+	animation-timing-function: ease;
+}
+body{
+	margin: 0px;
+}
+
+.social-links{
+	list-style: none;
+	padding:10px;
+	text-align: center;
+ 
+}
+.social-links li{
+	display: inline-block;
+	padding: 10px;
+    margin: auto;
+	margin: 0px 40px 20px 0px;
+}
+.social-links li a img{
+	height: 40px;
+	width: 40px;
+	filter: invert(100);
+	border:solid 3px white;
+	border-radius: 50%;
+	
+}
+.social-links li a img:hover{
+	box-shadow:0px 0px 6px 6px white;  starting values are horix and vertical outline-offset: 
+     border-color: white;
+    filter: invert(100);
+    filter: brightness(100);
+   box-shadow:0px 0px 6px 6px black;
+   height: 40px;
+   width: 42px;
+}
+#name-social-container{
+	margin-top: 20vh;
+	text-align: center;
+}
+#my-name{
+	font-size: 4rem;
+	letter-spacing: 0.1rem;
+	color: #201f19;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+section{
+ 	width: 100%;
+ 	min-height: 85vh;
+ 	position: relative;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ }
+
+ section:nth-child(2n){
+ 	background : linear-gradient(45deg,#011c01,#716d48,#aead27);
+ 	background-color: white;
+ 	background-attachment: fixed;
+ 	background-position: center;
+ 	background-size: cover;
+ }
+ section:nth-child(2n+1){
+ 	border:solid 2px black;
+ 	background-color: white;
+ 	background-attachment: fixed;
+ 	background-position: center;
+ 	background-size: cover;
+ }
+ #about{
+ 	min-height: 50vh;
+ 	background-color: white;
+
+ }
+ #about div img{
+	    background-image: url("static/12.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    height: 100%;
+	    width: 100%;
+        border-radius: 50%;
+        border: solid black 2px;
+    }
+#about div {
+	height: 13rem;
+	width: 13rem;
+	margin-top: -17vh;
+    /*margin: auto;*/
+   
+}
+#about p{
+	max-height: 200vh;
+	width: 90%;
+	font-size: 1.75rem;
+	font-style: italic;
+	align-items: center;
+	margin-top: 100px;
+
+}
+.section-heading{
+	width: auto;
+	padding: 10px;
+	margin:10px auto;
+	font-weight: 400;
+}
+.section-heading span{
+	/*background-color: lightgrey;*/
+    font-size: 40px;
+    color: black;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+.skills-display{
+	background-color:white;
+	width: 96%;
+	min-height: 50vh;
+	position: relative;
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-self: center;
+}
+.skill-progress{
+	height: 1.7rem;
+	width: 9rem;
+	border: 1.5px solid black;
+	border-radius: 0.9rem;
+	background-color: white;
+	margin: auto;
+}
+.skill-progress>div{
+	border-radius: 20px 0px 0px 20px;
+	
+}
+.skill-name span{
+	color: white;
+	font-size: 1.5rem;
+	margin-left: 5px;
+}
+.eighty-five{
+	width: 85%;
+	height: inherit;
+}
+.mb-blue{
+	background-color: darkblue;
+    
+}
+.seventy{
+	width: 70%;
+	height: inherit;
+}
+.eighty{
+	width: 80%;
+	height: inherit;
+}
+.mb-orange{
+	background-color: orange;
+    
+}
+.mb-red{
+	background-color: darkred;
+    
+}
+.mb-brown{
+	background-color: black;
+    
+}
+.mb-darkgreen{
+	background-color: darkgreen;
+    
+}
+.skill-progress:hover{
+	height: 1.7rem;
+	width: 10rem;
+	box-shadow: 0px 0px 6px 6px white;
+}
+.mb75px img{
+	height: 32px;
+	width: 35px;
+	filter: invert(30);
+}
+.Portfolio-display{
+	width: 96%;
+	min-height: 65vh;
+	max-height: 150vh;
+	border: solid 2px black;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: lightgrey;
+	margin: auto;
+}
+.Portfolio-display img{
+
+	height: 25%;
+	width: 200px;
+    margin: auto;
+    align-items: center;
+}
+.timeline{
+	position: relative;
+	width: 75%;
+	border: solid 2px black;
+}
+.timeline-box{
+	position: relative;
+	margin: 5px;
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+	border: solid 2px black;
+}
+.timeline-box:nth-child(2n){
+	position: relative;
+	left: 53%;
+
+}
+.timeline-divider{
+	position: absolute;
+	height: 80%;
+    width: 0%;
+	left: 50%;
+	border: dashed 2px lightgreen;
+	top: 8%;
+
+
+}
+.timeline-traveller{
+	position: sticky;
+	top: 25%;
+	transform: rotate(90deg);
+	/*left: 65%;
+	/*transition: 0.5s;*/
+}
+.timeline-traveller img{
+  height: 35px;
+  width: 35px;
+}
+.timeline-box:nth-child(2n)::after{
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	height: 0.6rem;
+	width: 0.6rem;
+	background-color: brown;
+	top: 33%;
+	left: -9.6%;
+	z-index: 1;
+
+}
+.timeline-box:nth-child(2n+1)::after{
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	height: 0.6rem;
+	width: 0.6rem;
+	background-color: brown;
+	top: 33%;
+	right: -12.6%;
+    z-index: 1;
+}
+

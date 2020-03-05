@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+	<title>Media Tags</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="coding,html,css">
+	<meta name="authour" content=" Israil khan">
+</head>
+<body>
+
+     <audio src="static/Baari - Bilal Saeed.mp3" controls>
+     	<source src="static/Baari - Bilal Saeed.mp3" type="audio/mp3">
+       <source src="static/Baari - Bilal Saeed.ogg" type="audio/ogg">
+
+     </audio>
+      
+      <br>
+      <video height="200" width="300" controls>
+      	  <source src="static/Intezaar Arijit Singh - HDYaar.Com.mp4" type="video/mp4">
+      </video>
+
+      <figure>
+      	<img src="static/cn1.png">
+      	<figcaption>logo image</figcaption>
+      </figure>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Bubbling</title>
+</head>
+<body>
+  <div id="parent">
+    <button id="child">Child</button>
+  </div>
+  <script>
+    var parent = document.querySelector('#parent');
+      parent.addEventListener('click', function(){
+        console.log("Parent clicked");
+      });
+    // var child = document.querySelector('#child');
+    //   child.addEventListener('click', function(){
+    //     console.log("Child clicked");
+    //     event.stopPropagation();
+    //   });
+  </script>
+</body>
+</html>
