@@ -39,7 +39,6 @@ body{
 }
 .horizontal-list li a{
 	color: white;
-    color-profile: auto;
     text-decoration:none;
     font-size: 26px;
     transition: color 1s,border-bottom 0.4s;
@@ -82,7 +81,7 @@ body{
 		opacity: 0.8;
 		min-width: 150px;
 		margin-top: 0px;
-		box-shadow: 0px 6px 14px px rgba(0,0,0,0.2);
+		box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.2);
 		z-index: 1;
 	}
 	.menu-button a{
@@ -113,7 +112,6 @@ body{
 	}
 	.horizontal-list li a{
 		color: white;
-	    color-profile: auto;
 	    text-decoration:none;
 	    font-size: 24px;
 	    
@@ -164,7 +162,7 @@ body{
 	
 }
 .social-links li a img:hover{
-	box-shadow:0px 0px 6px 6px white;  starting values are horix and vertical outline-offset: 
+	box-shadow:0px 0px 6px 6px white;  /*starting values are horix and vertical outline-offset:*/ 
      border-color: white;
     /*filter: invert(100);*/
     filter: brightness(100);
@@ -198,14 +196,14 @@ section{
  	background-size: cover;
  	opacity: 0.9;
  }
- section:nth-child(2n+1){
- 	background-color: #9bb1b7;
- 	background-attachment: fixed;
- 	background-position: center;
- 	background-size: cover;
- 	/*opacity: 0.9;*/
- 	border-bottom: 2px solid black;
- }
+	section:nth-child(2n+1) {
+		background-color: rgba(255, 255, 255, 0.7);
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		/*opacity: 0.9;*/
+		border-bottom: 2px solid black;
+	}
  #about{
  	min-height: 50vh;
  	/*background-color: white;*/
