@@ -1,5 +1,5 @@
 var doc = document.getElementsByTagName("header");
 
-function name() {
-    console.log("hello");   
+function fame(user){
+     console.log("hello world");   
 }

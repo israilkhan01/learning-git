@@ -1,15 +1,27 @@
 body{
-	min-height: 100vh;
-	background-image: url('static/edu2.jpg');
+	min-height: 110vh;
+	background-image: url('static/com.jpg');
 	background-repeat: no-repeat;
 	background-color: black;
+	/*filter: invert(100);*/
     /*opacity: 0.9;*/
 	background-size:cover;
 	background-position: bottom;
-	background-attachment: fixed;
+	background-attachment:fixed;
 	z-index: -1;
 }
 
+.Menu{
+		margin: 0px;
+		padding: 0px;
+		border: 0px;
+		height: 0px;
+	}
+.Menu img{
+	
+	height: 0px;
+	width: 0px;
+}
 .Menu img{
 	height: 0px;
 	width: 0px;
@@ -35,21 +47,26 @@ body{
 }
 .horizontal-list li a:hover{
 	color: white;
-	border-bottom: 3px solid white;
+	border-bottom: 2px solid white;
 	border-radius: 5px;
-	box-shadow:0px 0px 3px 3px white;
+	box-shadow:0px 0px 2px 2px white;
 
 }
 @media screen and (max-width:750px){
 	.Menu{
-		color: white;
-		border: none;
+		margin: 0px;
+		padding: 0px;
+		border: 0px;
+		height: 0px;
 	}
-	.Menu img {
+	.Menu img{
 		height: 45px;
 		width: 50px;
-
-	} 
+		/*background-color: lightblue;*/
+		filter: invert(100);
+		/*border:1px solid black;*/
+        z-index: 1;
+	}
 	.menu-button-drop {
 		position: static;
 		display: block;
@@ -61,27 +78,28 @@ body{
 		text-align: center;
 		display: none;
 		position: absolute;
-		background-color: white;
-		min-width: 160px;
+		/*background-color: lightgrey;*/
+		opacity: 0.8;
+		min-width: 150px;
 		margin-top: 0px;
-		box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+		box-shadow: 0px 6px 14px px rgba(0,0,0,0.2);
 		z-index: 1;
 	}
 	.menu-button a{
-		color: black;
 		text-decoration: none;
 		display: block;
        }
 
 
 	.menu-button a:hover{
-		background-color: white;
+		background-color: black;
+		border-radius: 0px;
 	}
 	.menu-button-drop:hover .menu-button{
 		display: inline-block;
 	}
-	.menu-button-drop:hover .Menu {
-		background-color:white;
+	.menu-button-drop:hover .Menu img{
+		background-color:none;
 	 }
 	.horizontal-list{
 		    list-style: none;
@@ -90,29 +108,28 @@ body{
 	}
 	.horizontal-list li{
 		align-items: center;
-		display: inline-block;
-		margin: 10px 10px 10px 8px;
-		transition: 1s;
+		display: block;
+		transition: 0.5s;
 	}
 	.horizontal-list li a{
-		color: black;
+		color: white;
 	    color-profile: auto;
 	    text-decoration:none;
-	    font-size: 26px;
-	    transition: color 1s,border-bottom 0.4s;
+	    font-size: 24px;
+	    
 
 	}
 	.horizontal-list li a:hover{
-		color: black;
-		border-bottom: 3px solid black;
-		border-radius: 5px;
-		box-shadow:0px 0px 3px 3px yellow;
+		color: white;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+		box-shadow:none;
 
 	}
 }
 
 #body_header{
-	min-height: 80vh;
+	min-height: 83vh;
 }
 #body_header h1{
 	text-align: center;
@@ -149,14 +166,14 @@ body{
 .social-links li a img:hover{
 	box-shadow:0px 0px 6px 6px white;  starting values are horix and vertical outline-offset: 
      border-color: white;
-    filter: invert(100);
+    /*filter: invert(100);*/
     filter: brightness(100);
    box-shadow:0px 0px 6px 6px black;
    height: 40px;
-   width: 42px;
+   width: 41px;
 }
 #name-social-container{
-	margin-top: 20vh;
+	margin-top: 17vh;
 	text-align: center;
 }
 #my-name{
@@ -176,22 +193,22 @@ section{
  }
 
  section:nth-child(2n){
- 	background : linear-gradient(45deg,#011c01,#716d48,#aead27);
- 	background-color: white;
  	background-attachment: fixed;
  	background-position: center;
  	background-size: cover;
+ 	opacity: 0.9;
  }
  section:nth-child(2n+1){
- 	border:solid 2px black;
- 	background-color: white;
+ 	background-color: #9bb1b7;
  	background-attachment: fixed;
  	background-position: center;
  	background-size: cover;
+ 	/*opacity: 0.9;*/
+ 	border-bottom: 2px solid black;
  }
  #about{
  	min-height: 50vh;
- 	background-color: white;
+ 	/*background-color: white;*/
 
  }
  #about div img{
@@ -202,21 +219,28 @@ section{
 	    width: 100%;
         border-radius: 50%;
         border: solid black 2px;
+        z-index: 1;
     }
 #about div {
 	height: 13rem;
 	width: 13rem;
-	margin-top: -17vh;
+	margin-top: -15vh;
     /*margin: auto;*/
    
+}
+@media screen and (max-width:590px){
+	#about div {
+		margin-top:-15vh; 
+	}
+
 }
 #about p{
 	max-height: 200vh;
 	width: 90%;
 	font-size: 1.75rem;
-	font-style: italic;
+	/*font-style: italic;*/
 	align-items: center;
-	margin-top: 100px;
+	margin-top: 20px;
 
 }
 .section-heading{
@@ -228,14 +252,14 @@ section{
 .section-heading span{
 	/*background-color: lightgrey;*/
     font-size: 40px;
-    color: black;
+    color: white;
     display: inline-block;
     padding-top: 10px;
     margin-right: 0.5rem;
 }
 
 .skills-display{
-	background-color:white;
+	/*background-color:#9bb1b7;*/
 	width: 96%;
 	min-height: 50vh;
 	position: relative;
@@ -244,6 +268,7 @@ section{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-self: center;
+	/*opacity: 0.7;*/
 }
 .skill-progress{
 	height: 1.7rem;
@@ -315,7 +340,7 @@ section{
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	background-color: lightgrey;
+	background-color: #9bb1b7;
 	margin: auto;
 }
 .Portfolio-display img{
@@ -388,3 +413,78 @@ section{
     z-index: 1;
 }
 
+.contact-details{
+	width: 100%;
+	}
+.contact-details span{
+	display: inline-block;
+}
+.contact-message{
+	top: 5%;
+}
+.contact-message input{
+	background-color: #9bb3b7;
+	height: 35px;
+	width: 80%;
+	margin-left: 10%;
+	border:0px;
+	margin-bottom: 20px;
+	font-size: 1rem;
+	border-bottom: 1px solid white;
+
+}
+
+.contact-mes{
+	width: 50%;
+}
+.no-outline:focus{
+      outline: none;
+}
+.mesg-button{
+	margin-top: 7%;
+
+}
+.contact-divider{
+	position: absolute;
+	height: 75%;
+	padding: 0px;
+    width: 0px;
+	left: 50%;
+	border: solid 1px white;
+	top: 12%;
+	margin-top: 50px;
+}
+.contacts {
+	margin-left: 5%;
+    width: 40%;
+    display: inline-block;
+    margin-top: 5%;
+
+}
+@media screen and (max-width:750px){
+
+  .contact-divider{
+	position: relative;
+	height: 75%;
+	padding: 0px;
+    width: 0px;
+	left: 50%;
+	border: solid 1px white;
+	top: 12%;
+	margin-top: 50px;
+}
+   .contact-details span{
+	display: block;
+    }  
+    .contact-mes{
+	width: 90%;
+	margin: auto;
+   }
+   .contacts {
+
+    width: 75%;
+    display: inline-block;
+    margin: auto;
+
+  }
+}
