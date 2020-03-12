@@ -156,16 +156,15 @@ body{
 	height: 40px;
 	width: 40px;
 	filter: invert(100);
-	border:solid 3px white;
+	border:solid 1px black;
 	border-radius: 50%;
 	
 }
 .social-links li a img:hover{
-	box-shadow:0px 0px 6px 6px white;  /*starting values are horix and vertical outline-offset:*/ 
-     border-color: white;
-    /*filter: invert(100);*/
-    filter: brightness(100);
-   box-shadow:0px 0px 6px 6px black;
+	box-shadow:0px 0px 2px 2px black;  /*starting values are horix and vertical outline-offset:*/ 
+     border-color: black;
+    filter: invert(100);
+    
    height: 40px;
    width: 41px;
 }
@@ -276,7 +275,21 @@ section:nth-child(2n+1) {
 	border: 1.5px solid black;
 	border-radius: 0.9rem;
 	background-color: white;
-	margin: auto;
+	margin: 100px 50px 50px 100px;
+}
+@media screen and (max-width:637px){
+	.skill-progress{
+		margin: 100px 30px 30px 20px;
+		
+	}
+	body{
+		background-image: url('static/forest.jpg');
+	}
+}
+@media screen and (max-width:440px){
+	.skill-progress{
+		margin: 100px auto 50px auto;
+	}
 }
 .skill-progress>div{
 	border-radius: 20px 0px 0px 20px;
@@ -284,7 +297,7 @@ section:nth-child(2n+1) {
 }
 .skill-name span{
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	margin-left: 5px;
 }
 .eighty-five{
@@ -319,10 +332,20 @@ section:nth-child(2n+1) {
 	background-color: darkgreen;
     
 }
+.mb-new1{
+	background-color: darkslategrey;
+}
+.mb-new2{
+	background-color: steelblue;
+}
+.mb-new3{
+	background-color: rgb(119, 48, 98);
+}
 .skill-progress:hover{
 	height: 1.7rem;
 	width: 10rem;
-	box-shadow: 0px 0px 6px 6px white;
+	box-shadow: 0px 0px 2px 2px black;
+	transition: 0.3s;
 }
 .mb75px img{
 	height: 32px;
