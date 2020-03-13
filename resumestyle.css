@@ -270,26 +270,12 @@ section:nth-child(2n+1) {
 	/*opacity: 0.7;*/
 }
 .skill-progress{
-	height: 1.7rem;
-	width: 9rem;
-	border: 1.5px solid black;
-	border-radius: 0.9rem;
+	height: 2rem;
+	width: 15rem;
+	border: 1.2px solid grey;
+	border-radius: 20px;
 	background-color: white;
-	margin: 100px 50px 50px 100px;
-}
-@media screen and (max-width:637px){
-	.skill-progress{
-		margin: 100px 30px 30px 20px;
-		
-	}
-	body{
-		background-size: 100% 100%;
-	}
-}
-@media screen and (max-width:440px){
-	.skill-progress{
-		margin: 100px auto 50px auto;
-	}
+	margin: 0px 20px 0px 20px;
 }
 .skill-progress>div{
 	border-radius: 20px 0px 0px 20px;
@@ -320,8 +306,20 @@ section:nth-child(2n+1) {
 	background-color: orange;
     
 }
+.mb-tomato{
+	background-color:tomato;
+    
+}
+.mb-final{
+	background-color: rgb(255, 0, 0);
+    
+}
+.mb-darkmegenta{
+	background-color: darkmagenta;
+    
+}
 .mb-red{
-	background-color: darkred;
+	background-color: rgb(209, 25, 25);
     
 }
 .mb-brown{
@@ -342,10 +340,10 @@ section:nth-child(2n+1) {
 	background-color: rgb(119, 48, 98);
 }
 .skill-progress:hover{
-	height: 1.7rem;
-	width: 10rem;
-	box-shadow: 0px 0px 2px 2px black;
-	transition: 0.3s;
+	height: 2rem;
+	width: 15.5rem;
+	box-shadow: 0px 0px 20px 1px lightslategray;
+	transition-duration: 0.2s;
 }
 .mb75px img{
 	height: 32px;
