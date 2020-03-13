@@ -283,7 +283,7 @@ section:nth-child(2n+1) {
 		
 	}
 	body{
-		background-image: url('static/forest.jpg');
+		background-size: 100% 100%;
 	}
 }
 @media screen and (max-width:440px){
