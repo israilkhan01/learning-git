@@ -10,34 +10,42 @@
 </head>
 <body>
     <header id="body_header">
-    	<nav class="menu-button-drop nav-menu">
-    		<button class="Menu">
-    			<i>
-                    <img src="static/list.png">
-                </i>
-    		</button>
-    		<ul class="horizontal-list menu-button">
-    			<li >
-    				<a href="#"> Home </a>
-    			</li>
-    			<li >
-    				<a href="#about"> About </a>
-    			</li>
-    			<li >
-    				<a href="#skills"> Skills</a>
-    			</li>
-    			<li >
-    				<a href="#education"> Education </a>
-    			</li>
-    			<li >
-    				<a href="#portfolio"> Portfolio</a>
-    			</li>
-    			<li >
-    				<a href="#contact"> Contact </a>
-    			</li>
-    		</ul>
-
-    	</nav>
+		<button class="Menu">
+			<i>
+				<img src="static/list.png">
+			</i>
+		</button>
+			<nav class="menu-button-drop nav-menu">
+				<div id="menu-divs">
+				<ul class="horizontal-list menu-button">
+					<div class="list-box">
+						<li >
+							<a href="#"> Home </a>
+						</li>
+						<li >
+							<a href="#about"> About </a>
+						</li>
+						<li >
+							<a href="#skills"> Skills</a>
+						</li>
+						<li >
+							<a href="#education"> Education </a>
+						</li>
+						<li >
+							<a href="#portfolio"> Portfolio</a>
+						</li>
+						<li >
+							<a href="#contact"> Contact </a>
+						</li>
+						</div>
+				</ul>
+				</div>
+			</nav>
+		<div id="particles-container" class="particles">
+			<div id="particles">
+				
+			</div>	
+		</div>
     	<div id="name-social-container">
     		<div class="text-center">
 	    		<h1 id="my-name">
@@ -299,7 +307,8 @@
             </div>
     	   </section>
     
-    </main>
+	</main>
+	<script src="jquery-3.4.1.js"></script>
 	<script src="./script.js"></script>
 </body>
 </html>
