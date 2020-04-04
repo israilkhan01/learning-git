@@ -27,21 +27,23 @@ buttons.addEventListener('click',function(event){
 })
 
 $(document).ready(function(){
+     
      $(".Menu").click(function(){
          $(".menu-button").slideToggle("fast");
      });
  });
-$(document).on("click", function(event){
-     var trigger = $(".Menu");
-     var wid=$(document).width();
-     if(trigger !== event.target && !trigger.has(event.target).length  ){
-         $(".menu-button").slideUp("fast");
-         console.log(trigger.has(event.target).length);
-     } 
-
+document.addEventListener('click',function(event){
+ if($(document).width()<750){
+     $(document).on("click", function(event){
+          var trigger = $(".Menu");
+          var wid=$(document).width();
+          if(trigger !== event.target && !trigger.has(event.target).length){
+              $(".menu-button").slideUp("fast");
+              console.log(trigger.has(event.target).length);
+          } 
      
- });
-
- if($(document).width>750){
-      $(".horizontal-list").show();
+          
+      });
  }
+ 
+})
