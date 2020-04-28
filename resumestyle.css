@@ -3,7 +3,7 @@ p ,a,div{
 }
 body{
 	min-height: 110vh;
-	background-image: url('static/mac.jpg');
+	background-image: url('static/2.jpg');
 	background-repeat: no-repeat;
 	background-color: black;
 	/*filter: invert(100);*/
@@ -197,27 +197,36 @@ section:nth-child(2n+1) {
 	/*opacity: 0.9;*/
 }
  #about{
- 	min-height: 60vh;
+ 	min-height: 65vh;
 	 background-color: white;
-	 opacity: 0.8;
+	 opacity: 0.9;
 
- }
- #about div img{
-	    background-image: url("static/12.jpg");
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    height: 100%;
-	    width: 100%;
-        border-radius: 50%;
-        border: solid black 2px;
-        z-index: 1;
+}
+.intro{
+ 	width: 80%;
+ 	border:0.5px solid lightgrey;
+ 	border-radius: 5px;
+ 	/*display: inline-block;*/
+ 	margin-top: 30px;
+ 	padding: 30px;
+ 	/*text-align: center;*/
+ 	box-shadow: 0px 0px 6px 2px black;
+}
+ .image{
+	 	height: 13rem;
+		width: 13rem;
+		margin-top: -15vh;
+	   
     }
-#about div {
-	height: 13rem;
-	width: 13rem;
-	margin-top: -15vh;
-	/*margin: auto;*/
-   
+.image img{
+	background-image: url("static/12.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: solid black 2px;
+    z-index: 1;
 }
 @media screen and (max-width:590px){
 	#about div {
@@ -225,16 +234,17 @@ section:nth-child(2n+1) {
 	}
 
 }
-#about p{
+.intro p{
 	color: black;
 	max-height: 200vh;
-	width: 90%;
+	width: 100%;
 	font-size: 1.7rem;
 	font-family: monospace,sans-serif;
-	align-items: center;
-	margin-top: 5%;
+	/*text-align: center;*/
 	z-index: 1;
-
+	/*margin-top: 30px;*/
+	/*padding: 30px;*/
+  
 }
 .section-heading{
 	width: auto;
@@ -254,7 +264,7 @@ section:nth-child(2n+1) {
 
 .skills-display{
 	/*background-color:#9bb1b7;*/
-	width: 96%;
+	width: 70%;
 	min-height: 50vh;
 	position: relative;
 	margin-bottom: 20px;
@@ -262,15 +272,17 @@ section:nth-child(2n+1) {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-self: center;
+	box-shadow: 0px 0px 12px 2px black;
 	/*opacity: 0.7;*/
 }
 .skill-progress{
-	height: 1.7rem;
+	height: 2rem;
 	width: 9rem;
-	border: 1.5px solid black;
-	border-radius: 0.9rem;
+	border: 1px solid black;
+	border-radius: 5px;
 	background-color: white;
-	margin: 100px 50px 50px 100px;
+	margin: 50px 50px 50px 50px;
+	box-shadow: 0px 0px 12px 2px lightgray;
 }
 @media screen and (max-width:637px){
 	.skill-progress{
@@ -287,7 +299,7 @@ section:nth-child(2n+1) {
 	}
 }
 .skill-progress>div{
-	border-radius: 20px 0px 0px 20px;
+	border-radius: 5px 0px 0px 5px;
 	
 }
 .skill-name span{
@@ -337,8 +349,8 @@ section:nth-child(2n+1) {
 	background-color: rgb(119, 48, 98);
 }
 .skill-progress:hover{
-	height: 1.7rem;
-	width: 10rem;
+	height: 2.1rem;
+	width: 9rem;
 	box-shadow: 0px 0px 12px 2px lightgray;
 	transition: 0.3s;
 }
@@ -348,7 +360,7 @@ section:nth-child(2n+1) {
 	/*filter: invert(30);*/
 }
 .Portfolio-display{
-	width: 96%;
+	width: 80%;
 	min-height: 65vh;
 	border-radius: 5px;
 	display: flex;
@@ -358,28 +370,42 @@ section:nth-child(2n+1) {
 	align-items: center;
 	background-color:white;
 	margin: auto;
+	box-shadow: 0px 0px 12px 2px black;
+	margin-bottom: 30px;
+}
+.port img{
+	height: 25%;
+	width: 200px;
+	padding: 30px;
+	box-shadow: 0px 0px 12px 2px black;
+	align-items: center;
 }
 .Portfolio-display img{
 
 	height: 25%;
 	width: 200px;
-    margin: auto;
-    align-items: center;
+    /*margin: auto;*/
+    padding: 30px
+    
 }
 .timeline{
 	position: relative;
-	width: 85%;
+	width: 80%;
 	/* border: solid 2px black; */
+	margin-bottom: 40px;
 }
 .timeline-box{
 	position: relative;
-	margin: 5px;
+	/*margin: 5px;*/
 	width: 40%;
-	left: 5%;
-	border-radius: 10px;
-	background-color: lightgrey;
+	height: 200px;
+	left: 1%;
+	border-radius: 5px;
+	background-color: #f5f5f5;
 	min-height: 150px;
-	border: solid 1px black;
+	border: solid 0.8px black;
+	box-shadow: 0px 0px 12px 2px black;
+	padding: 10px;
 }
 .timeline-box h3{
 	color: midnightblue;
@@ -389,15 +415,15 @@ section:nth-child(2n+1) {
 }
 .timeline-box:nth-child(2n){
 	position: relative;
-	background-color:lightgrey;
-	left: 55.5%;
+	background-color:#f5f5f5;
+	left: 57%;
 
 }
 .timeline-divider{
 	position: absolute;
 	height: 80%;
     width: 0%;
-	left: 50.5%;
+	left: 50%;
 	border: dashed 2px black;
 	top: 8%;
 
@@ -413,14 +439,9 @@ section:nth-child(2n+1) {
 	/*transition: 0.5s;*/
 }
 .timeline-traveller img{
-  height: 35px;
-  width: 35px;
+  height: 45px;
+  width: 40px;
 }
-/* .timeline-box::after{
-	position: absolute;
-	content: ":";
-	color: yellowgreen;
-} */
 .timeline-box:nth-child(2n)::after{
 	position: absolute;
 	content: '';
@@ -429,7 +450,7 @@ section:nth-child(2n+1) {
 	width: 0.6rem;
 	background-color: midnightblue;
 	top: 33%;
-	left: -14.5%;
+	left: -17.8%;
 	z-index: 1;
 
 }
@@ -441,7 +462,7 @@ section:nth-child(2n+1) {
 	width: 0.6rem;
 	background-color: midnightblue;
 	top: 33%;
-	right: -14.1%;
+	right: -1%;
     z-index: 1;
 }
 @media screen and (max-width:750px){
