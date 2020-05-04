@@ -5,12 +5,13 @@ function scrollfun(event){
      var targetsection=document.getElementById(targetSectionID);
      var interval=setInterval(function(){
           var targetsectioncoordinates=targetsection.getBoundingClientRect();
+          // console.log(targetsectioncoordinates);
           if(targetsectioncoordinates.top<=0){
                clearInterval(interval);
                return;
           }
 
-          else if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          else if((window.innerHeight + window.scrollY+10)>=document.body.offsetHeight){
                clearInterval(interval);
                return;
                };
