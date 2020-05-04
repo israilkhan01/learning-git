@@ -412,7 +412,6 @@ section:nth-child(2n+1) {
 }
 .timeline-box{
 	position: relative;
-	/*margin: 5px;*/
 	width: 40%;
 	height: 200px;
 	left: 1%;
@@ -420,23 +419,49 @@ section:nth-child(2n+1) {
 	background-color: #fafcfd;
 	min-height: 150px;
 	/*border: solid 0.8px black;*/
-	box-shadow: 0px 0px 1px 1px lightgrey;
+	/*box-shadow: 0px 0px 1px 1px lightgrey;*/
 	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
 }
-.timeline-box span::after{
-	content: "      High Schooling";
-	font-weight: bolder;
-	font-style: italic;
-	color: red;
-	font-size: 25px;
 
+.timeline-degree{
+	font-style: normal;
+	font-size: bolder;
+	font-weight: 900;
+	color: navy;
+	text-align: right;
+	font-size: 20px;
 }
-.timeline-box h3{
-	color: midnightblue;
+.timeline-institution{	
+	font-size: bold;
+	font-weight: 800;
+	font-family:cursive;
+	text-align: right;
+	font-size: 18px;
 }
-.timeline-box p{
-	font-size: 1.3rem;
-    font-weight: bolder;
+.holy{
+	color: red;
+}
+.jamia{
+	color: darkgreen;
+}
+.cn{
+	color: darkorange;
+}
+.timeline-period{
+	font-style: italic;
+	font-size: bolder;
+	color: navy;
+	text-align: right;
+	font-size: 15px;
+}
+.timeline-description{
+	font-size: 15px;
+	font-family: cursive;
+
 }
 .timeline-box:nth-child(2n){
 	position: relative;
