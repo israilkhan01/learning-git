@@ -49,19 +49,23 @@ document.addEventListener('click',function(event){
  
 });
 
+//skill bars animation
 var skills=document.getElementById("skills");
 var skillcontainer=document.getElementById("skill-container");
 var skillbars=document.querySelectorAll('.skill-progress>div');
+var probars=document.querySelectorAll("#skill-container>div");
 window.addEventListener('scroll',scrollcheck);
-var animationDone=false;
-function initialise(){
-  for(let bar of skillbars){
+
+var animationDone=[false,false,false,false,false,false,false,false];
+function initialise(bar){
+
     bar.style.width=0+'%';
-  }
+
 }
+
 // initialise();
-function fillbars(){
-  for(let bar of skillbars){
+function fillbars(bar){
+  
     let targetwidth=bar.getAttribute('data-bar-width');
     // console.log(targetwidth);
     let currentWidth=0;
@@ -75,17 +79,23 @@ function fillbars(){
     },10)
    
   }
-}
+
 function scrollcheck(){
-  var skillcord=skillcontainer.getBoundingClientRect();
-  if(!animationDone&&skillcord.top<window.innerHeight){
-    animationDone=true;
-    fillbars();
-    // console.log(skillcord.top,window.innerHeight)
-    // console.log('reached the skill skill-container')
+  
+  for(let i=0;i<skillbars.length;i++){
+
+    var barcord=probars[i].getBoundingClientRect();
+   
+    if(!animationDone[i]&&barcord.top<=window.innerHeight){
+      animationDone[i]=true;
+       // console.log(barcord);
+       fillbars(skillbars[i]);
+     // console.log(skillcord.top,window.innerHeight)
+       // console.log('reached the skill skill-container')
+    }
+    else if(barcord.top>window.innerHeight){
+      initialise(skillbars[i]);
+      animationDone[i]=false;
   }
-    else if(skillcord.top>window.innerHeight){
-      initialise();
-      animationDone=false;
   }
 }
