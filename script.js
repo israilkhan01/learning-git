@@ -47,4 +47,45 @@ document.addEventListener('click',function(event){
       });
  }
  
-})
+});
+
+var skills=document.getElementById("skills");
+var skillcontainer=document.getElementById("skill-container");
+var skillbars=document.querySelectorAll('.skill-progress>div');
+window.addEventListener('scroll',scrollcheck);
+var animationDone=false;
+function initialise(){
+  for(let bar of skillbars){
+    bar.style.width=0+'%';
+  }
+}
+// initialise();
+function fillbars(){
+  for(let bar of skillbars){
+    let targetwidth=bar.getAttribute('data-bar-width');
+    // console.log(targetwidth);
+    let currentWidth=0;
+    let interval=setInterval(function(){
+      if(currentWidth>targetwidth){
+        clearInterval(interval);
+        return;
+      }
+      currentWidth++;
+      bar.style.width=currentWidth+'%';
+    },10)
+   
+  }
+}
+function scrollcheck(){
+  var skillcord=skillcontainer.getBoundingClientRect();
+  if(!animationDone&&skillcord.top<window.innerHeight){
+    animationDone=true;
+    fillbars();
+    // console.log(skillcord.top,window.innerHeight)
+    // console.log('reached the skill skill-container')
+  }
+    else if(skillcord.top>window.innerHeight){
+      initialise();
+      animationDone=false;
+  }
+}

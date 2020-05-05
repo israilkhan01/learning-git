@@ -277,9 +277,9 @@ section:nth-child(2n+1) {
 .skill-progress{
 	height: 2rem;
 	width: 9rem;
-	border: 0.8px solid black;
+	/*border: 0.8px solid black;*/
 	border-radius: 5px;
-	background-color: white;
+	background-color: lightgrey;
 	margin: 50px 50px 50px 50px;
 	box-shadow: 0px 0px 6px 1px lightgray;
 }
@@ -313,7 +313,7 @@ section:nth-child(2n+1) {
 .skill-name span{
 	color: white;
 	font-size: 1.4rem;
-	margin-left: 5px;
+    padding: 6px;
 }
 .eighty-five{
 	width: 85%;
@@ -357,10 +357,10 @@ section:nth-child(2n+1) {
 	background-color: rgb(119, 48, 98);
 }
 .skill-progress:hover{
-	height: 2rem;
-	width: 9rem;
-	background: grey;
-	box-shadow: 0px 0px 12px 1px lightgray;
+	height: 2.1rem;
+	width: 9.1rem;
+	background-color: lightgrey;
+	box-shadow: 0px 0px 24px 6px lightgray;
 	transition: 0.3s;
 }
 .mb75px img{
