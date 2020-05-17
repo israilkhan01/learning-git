@@ -1,0 +1,125 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Person_Person__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Person/Person */ "./src/Person/Person.js");
+var _jsxFileName = "C:\\Users\\Israil khan\\Desktop\\html\\NODEWS\\React-App\\my-app\\src\\App.js";
+ // import logo from './logo.svg';
+
+
+
+
+class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(...args) {
+    super(...args);
+    this.state = {
+      persons: [{
+        name: "Israil khan",
+        dream: "Google"
+      }],
+      otherStuff: "pubg lover"
+    };
+
+    this.switchNameHandler = () => {
+      // console.log("Was Clicked!!"); 
+      // DON'T Do this this.state.persons[0].name="Fat Boy";
+      this.setState({
+        persons: [{
+          name: "Aliza",
+          dream: "Microsoft"
+        }]
+      });
+    };
+
+    this.switchChangeHandler = event => {
+      this.setState({
+        persons: [{
+          name: event.target.value,
+          dream: "Microsoft"
+        }]
+      });
+    };
+  }
+
+  render() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "App",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 7
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+      className: "App-header",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 9
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 11
+      }
+    }, "Hello World!!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      onClick: this.switchNameHandler,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33,
+        columnNumber: 11
+      }
+    }, "Switch Name!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      className: "App-link",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 11
+      }
+    }, " This is the first react App"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Person_Person__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      name: this.state.persons[0].dream,
+      Age: "21",
+      change: this.switchChangeHandler,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 11
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Person_Person__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      name: this.state.persons[0].name,
+      Age: "21",
+      click: this.switchNameHandler,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36,
+        columnNumber: 11
+      }
+    }, "My hobbies is: Playing pubg")));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ })
+
+})
+//# sourceMappingURL=main.bfdc4a32c2f9fb2e3eb0.hot-update.js.map
