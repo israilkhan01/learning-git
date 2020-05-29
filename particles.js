@@ -27,10 +27,10 @@ var pJS = function(tag_id, params){
         }
       },
       color: {
-        value: '#fff'
+        value: ["#ded547","#ff0000","#54ca5d","#908f8f","#0288d1","#ff8f00","#00796b"]
       },
       shape: {
-        type: 'circle',
+        type: 'edge',
         stroke: {
           width: 0,
           color: '#ff0000'
@@ -75,7 +75,7 @@ var pJS = function(tag_id, params){
         enable: true,
         speed: 2,
         direction: 'none',
-        random: false,
+        random: true,
         straight: false,
         out_mode: 'out',
         bounce: false,
@@ -92,7 +92,7 @@ var pJS = function(tag_id, params){
       events: {
         onhover: {
           enable: true,
-          mode: 'grab'
+          mode: 'repulse'
         },
         onclick: {
           enable: true,

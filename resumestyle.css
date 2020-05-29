@@ -14,7 +14,7 @@ body{
 	background-attachment:fixed;
 	/*z-index: -1;*/
 }
-#particles{
+#particles-js{
 	position: fixed;
     top: 0;
     left: 0;
@@ -25,13 +25,14 @@ body{
     color: red;
     box-sizing: border-box;
     z-index: -1;
+    animation: reveal 2.5s ease forwards;
 }
-#particles-js{
+/*#particles-js{
 	color: red;
 	width: 100%;
     height: 100%;
 }
-
+*/
 .Menu{
 		margin: 0px;
 		padding: 0px;
@@ -644,12 +645,13 @@ section:nth-child(2n+1) {
 @media screen and (max-width:750px){
 	
   .contact-divider{
-	position: relative;
+	/*position: relative;*/
+    display: none;
 	height: 75%;
 	padding: 0px;
     width: 0px;
 	left: 50%;
-	border: solid 1px white;
+	border: solid 0px white;
 	top: 12%;
 	margin-top: 50px;
 }
