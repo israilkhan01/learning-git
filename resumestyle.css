@@ -1,39 +1,34 @@
 p ,a,div{
-	font-family: sans-serif,monospace;
+	font-family: 'Open Sans', sans-serif;
+}
+article{
+	-webkit-tap-highlight-color: transparent;
+	 animation: reveal 2.5s ease forwards;
 }
 body{
-	/*min-height: 110vh;*/
+	margin: 0px;
 	background-image: url('static/2.jpg');
 	background-repeat: no-repeat;
 	background-color: black;
-	/*filter: invert(100);*/
-	/*text-align: center;*/
-    /*opacity: 0.9;*/
 	background-size:cover;
 	background-position: bottom;
 	background-attachment:fixed;
-	/*z-index: -1;*/
+	box-sizing: border-box;
 }
 #particles-js{
-	position: fixed;
+	display: block;
     top: 0;
     left: 0;
-    text-align: center;
-    padding: 2em;
+    padding: 1em;
     width: 100%;
     height: 100%;
-    color: red;
     box-sizing: border-box;
     z-index: -1;
-    animation: reveal 2.5s ease forwards;
+
 }
-/*#particles-js{
-	color: red;
-	width: 100%;
-    height: 100%;
-}
-*/
-.Menu{
+
+.Menu{  
+	   display: none;
 		margin: 0px;
 		padding: 0px;
 		border: 0px;
@@ -46,8 +41,10 @@ body{
 }
 
 .horizontal-list{
+	   position: relative;
 	    list-style: none;
 		padding: 0px;
+		/*margin: 0px;*/
 	    text-align: center;
 }
 .horizontal-list li{
@@ -135,21 +132,16 @@ body{
 }
 
 #body_header{
-	min-height: 83vh;
+	height: 83vh;
 }
 #body_header h1{
 	text-align: center;
 	color: white;
 	font-size: 5rem;
-	font-family: monospace,sans-serif;
-	margin-top: 100px;
+	margin: 0;
 	animation-timing-function: ease;
 	z-index: 1;
 }
-body{
-	margin: 0px;
-}
-
 .social-links{
 	list-style: none;
 	padding:10px;
@@ -160,7 +152,7 @@ body{
 	display: inline-block;
 	padding: 10px;
     margin: auto;
-	margin: 0px 40px 20px 0px;
+	margin: 0px 20px 20px 20px;
 }
 .social-links li a img{
 	height: 40px;
@@ -180,7 +172,13 @@ body{
    width: 41px;
 }
 #name-social-container{
-	margin-top: 17vh;
+	margin:17vh auto 0px auto;
+    /*display: block;*/
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	width: 550px;
 	text-align: center;
 }
 #my-name{
@@ -228,16 +226,16 @@ section:nth-child(2n+1) {
  .image{
 	 	height: 13rem;
 		width: 13rem;
-		margin-top: -15vh;
+		margin-top: -7.4rem;
 	   
     }
 .image img{
-	background-image: url("static/12.jpg");
+	background-image: url("static/13.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 10px;
     /*border: solid black 2px;*/
     box-shadow: 0px 0px 12px 0.5px black;
     z-index: 1;
@@ -252,13 +250,11 @@ section:nth-child(2n+1) {
 	color: black;
 	max-height: 200vh;
 	width: 100%;
-	font-size: 1.7rem;
-	font-family:serif;
-	/*text-align: center;*/
+	font-size: 1.5rem;
+	
 	z-index: 1;
 	margin: 0;
-	/*margin-top: 30px;*/
-	/*padding: 30px;*/
+	
   
 }
 .section-heading{
@@ -290,7 +286,7 @@ section:nth-child(2n+1) {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-self: center;
-	box-shadow: 0px 0px 12px 1px black;
+	box-shadow: 0px 0px 20px 12px #bffcc1;
 	/*opacity: 0.7;*/
 }
 .skill-progress{
@@ -332,7 +328,8 @@ section:nth-child(2n+1) {
 .skill-name span{
 	color: white;
 	font-size: 1.4rem;
-    padding: 6px;
+    padding-left: 6px;
+    position: relative;
 }
 .eighty-five{
 	width: 85%;
@@ -398,7 +395,7 @@ section:nth-child(2n+1) {
 	align-items: center;
 	background-color:white;
 	margin: auto;
-	box-shadow: 0px 0px 12px 1px black;
+	box-shadow: 0px 0px 20px 12px lightgrey;
 	margin-bottom: 30px;
 }
 .port{
@@ -412,14 +409,13 @@ section:nth-child(2n+1) {
 	height: 25%;
 	width: 200px;
 	padding: 30px;
-	box-shadow: 0px 0px 12px 1px black;
+	box-shadow: 0px 0px 20px 12px #b0b0b0;
 	align-items: center;
 }
 .Portfolio-display img{
 
 	height: 25%;
 	width: 200px;
-    /*margin: auto;*/
     padding: 30px
     
 }
@@ -432,18 +428,17 @@ section:nth-child(2n+1) {
 .timeline-box{
 	position: relative;
 	width: 40%;
-	height: 200px;
+	/*height: 200px;*/
 	left: 1%;
 	border-radius: 4px;
 	background-color: #fafcfd;
 	min-height: 150px;
-	/*border: solid 0.8px black;*/
-	/*box-shadow: 0px 0px 1px 1px lightgrey;*/
 	padding: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	overflow:auto;
+	overflow:visible;
+	box-shadow: 0px 0px 20px 10px #aef7ff;
 	justify-content: space-between;
 }
 
@@ -479,8 +474,7 @@ section:nth-child(2n+1) {
 	font-size: 15px;
 }
 .timeline-description{
-	font-size: 15px;
-	font-family: cursive;
+	font-size: 16px;
 
 }
 .timeline-box:nth-child(2n){
