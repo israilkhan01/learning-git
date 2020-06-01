@@ -27,10 +27,11 @@ buttons.addEventListener('click',function(event){
      window.open('message.html')
 })
 
+//menu button
 $(document).ready(function(){
      
      $(".Menu").click(function(){
-         $(".menu-button").slideToggle("fast");
+         $(".menu-button").toggle("fast");
      });
  });
 document.addEventListener('click',function(event){
@@ -48,6 +49,8 @@ document.addEventListener('click',function(event){
  }
  
 });
+
+
 
 //skill bars animation
 var skills=document.getElementById("skills");

@@ -69,6 +69,7 @@ body{
 
 @media screen and (max-width:750px){
 	.Menu{
+		display: block;
 		margin: 0px;
 		padding: 0px;
 		border: 0px;
@@ -76,13 +77,16 @@ body{
 		margin-right: 5%;
 		margin-left: 87%;
 		margin-top: 20px;
-		z-index: 10000;
+		z-index: 1000;
 	}
 	.Menu img{
+		position: absolute;
+		display: block;
 		height: 40px;
 		width: 45px;
 		filter: invert(100);
-        z-index: 100000;
+        z-index: 1000;
+        cursor: pointer;
 	}
 	.menu-button{
 		position: fixed;
@@ -90,7 +94,7 @@ body{
 		padding: 0px;
 		text-align: center;
 		display: none;
-		background-color: #282924;
+		background-color:#141414;
 		background-attachment: fixed;
 		width: 40%;
 		height: 110vh;
@@ -101,9 +105,12 @@ body{
 	.horizontal-list{
 		top: 0;
 		right: 0;
+		height: 120vh;
+		position: fixed;
 		list-style: none;
 		padding: 0px;
 		text-align: center;
+		z-index: 10000;
 	}
 	.horizontal-list li{
 		align-items: center;
@@ -117,13 +124,13 @@ body{
 	    text-decoration:none;
 		font-size: 17px;
 		text-transform: uppercase;
-		font-family: monospace,sans-serif;
+		/*font-family: monospace,sans-serif;*/
 	}
 	.horizontal-list li a:hover{
 	    color: grey;
 	}
 	.list-box{
-		position:sticky;
+		position:relative;
 		width: 50%;
 		top:25%;
 		margin-left:15%;
@@ -173,13 +180,24 @@ body{
 }
 #name-social-container{
 	margin:17vh auto 0px auto;
-    /*display: block;*/
 	position: absolute;
 	top: 0px;
 	right: 0px;
 	left: 0px;
 	width: 550px;
 	text-align: center;
+}
+@media screen and (max-width:750px){
+	#name-social-container{
+            width: 350px;
+	}
+	#body_header h1{
+		font-size: 4rem;
+    }
+    .social-links{
+    	display: none;
+    }
+
 }
 #my-name{
 	font-size: 4rem;
