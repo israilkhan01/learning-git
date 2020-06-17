@@ -21,11 +21,36 @@ function scrollfun(event){
 for(var i=0;i<navmenuselector.length;i++){
      navmenuselector[i].addEventListener('click',scrollfun);
 }
-
+//mesgg
 var buttons=document.getElementById('mesg-button');
 buttons.addEventListener('click',function(event){
      window.open('message.html')
 })
+
+//bottom-to-Top
+
+var top2bottom=document.getElementById('back-button');
+top2bottom.addEventListener('click',function(event){
+  event.preventDefault();
+  var intervalUP=setInterval(function(){
+     if(document.documentElement.scrollTop<=0){
+      console.log("clearInterval");
+      clearInterval(intervalUP);
+      return;
+     }
+
+     window.scrollBy(0,-50);
+  },25);
+  });
+
+window.onscroll=function(){
+  if(document.body.scrollTop>644||document.documentElement.scrollTop>644){
+    top2bottom.style.display="block";
+
+  }else{
+    top2bottom.style.display="none";
+  }
+}
 
 //menu button
 $(document).ready(function(){
