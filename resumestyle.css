@@ -7,9 +7,9 @@ article{
 }
 body{
 	margin: 0px;
-	background-image: url('static/2.jpg');
+/* 	background-image: url('static/2.jpg'); */
 	background-repeat: no-repeat;
-	background-color: black;
+	background-color: #191919;
 	background-size:cover;
 	background-position: bottom;
 	background-attachment:fixed;
