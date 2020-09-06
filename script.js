@@ -1,6 +1,7 @@
 var navmenuselector=document.querySelectorAll(".nav-menu a");
 function scrollfun(event){
      event.preventDefault();
+     
      var targetSectionID=this.textContent.trim().toLowerCase();
      var targetsection=document.getElementById(targetSectionID);
      var interval=setInterval(function(){
@@ -21,11 +22,18 @@ function scrollfun(event){
 for(var i=0;i<navmenuselector.length;i++){
      navmenuselector[i].addEventListener('click',scrollfun);
 }
+
+
+
 //mesgg
 var buttons=document.getElementById('mesg-button');
 buttons.addEventListener('click',function(event){
      window.open('message.html')
 })
+
+
+
+
 
 //bottom-to-Top
 
@@ -52,6 +60,11 @@ window.onscroll=function(){
   }
 }
 
+
+
+
+
+
 //menu button
 $(document).ready(function(){
      
@@ -74,6 +87,8 @@ document.addEventListener('click',function(event){
  }
  
 });
+
+
 
 
 
