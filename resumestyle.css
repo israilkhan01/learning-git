@@ -7,10 +7,16 @@ article{
 }
 body{
 	margin: 0px;
+<<<<<<< HEAD
 	/*background-image: url('static/2.jpg');*/
 	/*background-color: */
 	background-repeat: no-repeat;
 	background-color: #2b2b2b;
+=======
+/* 	background-image: url('static/2.jpg'); */
+	background-repeat: no-repeat;
+	background-color: #191919;
+>>>>>>> 142f623b348eba2fc395466b5a95b2b607d6526b
 	background-size:cover;
 	background-position: bottom;
 	background-attachment:fixed;
